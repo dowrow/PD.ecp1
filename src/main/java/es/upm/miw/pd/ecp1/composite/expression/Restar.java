@@ -4,7 +4,7 @@ public class Restar extends ComposedExpresion {
 	
 	public Restar(Expresion operador1, Expresion operador2) {
 		super(operador1, operador2);
-		operator = "-";
+		this.operator = "-";
 	}
 
 	@Override

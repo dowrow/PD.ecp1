@@ -4,7 +4,7 @@ public class Dividir extends ComposedExpresion {
 	
 	public Dividir(Expresion operador1, Expresion operador2) {
 		super(operador1, operador2);
-		operator = "/";
+		this.operator = "/";
 	}
 	
 	@Override

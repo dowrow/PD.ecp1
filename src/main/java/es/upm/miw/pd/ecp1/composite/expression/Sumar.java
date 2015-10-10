@@ -4,7 +4,7 @@ public class Sumar extends ComposedExpresion {
 	
 	public Sumar(Expresion operador1, Expresion operador2) {
 		super(operador1, operador2);
-		operator = "+";
+		this.operator = "+";
 	}
 
 	@Override

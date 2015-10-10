@@ -5,7 +5,7 @@ public abstract class ComposedExpresion extends Expresion {
 	protected Expresion operador2;
 	protected String operator;
 	
-	public ComposedExpresion (Expresion operador1, Expresion operador2) {
+	public ComposedExpresion(Expresion operador1, Expresion operador2) {
 		this.operador1 = operador1;
 		this.operador2 = operador2;
 	}
