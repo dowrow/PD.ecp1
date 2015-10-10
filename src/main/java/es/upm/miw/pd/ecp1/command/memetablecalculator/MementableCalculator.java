@@ -1,4 +1,4 @@
-package es.upm.pd.ecp1.command.memetablecalculator;
+package es.upm.miw.pd.ecp1.command.memetablecalculator;
 
 import es.upm.miw.pd.ecp1.command.calculator.Calculator;
 
