@@ -4,8 +4,8 @@ public class NaturalNumberEs extends NaturalNumber {
 
     public NaturalNumberEs(int value) {
 		super(value);
-		String[] textValue = {"zero", "one", "two", "three", "four", "five"};
-		setTextValue(textValue);
+		String[] textValues = {"cero", "uno", "dos", "tres", "cuatro", "cinco"};
+		setTextValue(textValues);
 	}
 	
 }
