@@ -1,34 +1,26 @@
 package es.upm.miw.pd.ecp1.visitor.figure;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class FiguresManager {
 
-    private List<Figure> figures;
-
+	private TotalAreaFigureVisitor areaVisitor;
+    private TotalNumberOfSidesFigureVisitor sidesVisitor;
+    
     public FiguresManager() {
-        figures = new ArrayList<>();
+        areaVisitor = new TotalAreaFigureVisitor();
+        sidesVisitor = new TotalNumberOfSidesFigureVisitor();
     }
 
     public void add(Figure figure) {
-        figures.add(figure);
+    	figure.accept(areaVisitor);
+    	figure.accept(sidesVisitor);
     }
 
     public double totalArea() {
-        double result = 0;
-        for (Figure figure : figures) {
-            result += figure.area();
-        }
-        return result;
+    	return areaVisitor.getTotalArea();
     }
 
     public double totalNumberOfSides() {
-        double result = 0;
-        for (Figure figure : figures) {
-            result += figure.numberOfSides();
-        }
-        return result;
+    	return sidesVisitor.getTotalNumberOfSides();
     }
 
 }
