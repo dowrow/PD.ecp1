@@ -11,5 +11,4 @@ public class Multiplicar extends ComposedExpresion {
 	public int operar() {
 		return this.operador1.operar() * this.operador2.operar();
 	}
-
 }

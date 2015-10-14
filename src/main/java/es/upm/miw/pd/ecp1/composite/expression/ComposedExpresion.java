@@ -1,8 +1,11 @@
 package es.upm.miw.pd.ecp1.composite.expression;
 
 public abstract class ComposedExpresion extends Expresion {
+
 	protected Expresion operador1;
+	
 	protected Expresion operador2;
+	
 	protected String operator;
 	
 	public ComposedExpresion(Expresion operador1, Expresion operador2) {

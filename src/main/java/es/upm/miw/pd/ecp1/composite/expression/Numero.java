@@ -1,6 +1,7 @@
 package es.upm.miw.pd.ecp1.composite.expression;
 
 public class Numero extends Expresion {
+	
 	private int value;
 	
 	public Numero(int value) {
@@ -16,5 +17,4 @@ public class Numero extends Expresion {
 	public String toString() {
 		return this.value + "";
 	}
-
 }
