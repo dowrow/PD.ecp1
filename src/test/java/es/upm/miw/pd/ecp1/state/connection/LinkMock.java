@@ -1,6 +1,4 @@
-package es.upm.miw.pd.state.conection;
-
-import es.upm.miw.pd.state.connection.Link;
+package es.upm.miw.pd.ecp1.state.connection;
 
 public final class LinkMock implements Link {
     private String msg;
