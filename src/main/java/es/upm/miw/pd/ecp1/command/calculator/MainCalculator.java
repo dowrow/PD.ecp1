@@ -3,7 +3,8 @@ package es.upm.miw.pd.ecp1.command.calculator;
 import upm.jbb.IO;
 
 public class MainCalculator {
-    private CommandManager commandManager;
+    
+	private CommandManager commandManager;
 
     public MainCalculator() {
         Calculator calculator = new Calculator();

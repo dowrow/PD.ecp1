@@ -9,6 +9,7 @@ import es.upm.miw.pd.ecp1.command.calculator.ResetCommand;
 import es.upm.miw.pd.ecp1.command.calculator.SubtractCommand;
 
 public class MainMementableCalculator {
+	
     private CommandManager commandManager;
 
     public MainMementableCalculator() {

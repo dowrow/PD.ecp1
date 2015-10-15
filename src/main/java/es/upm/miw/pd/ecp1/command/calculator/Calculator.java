@@ -1,7 +1,8 @@
 package es.upm.miw.pd.ecp1.command.calculator;
 
 public class Calculator {
-    private int total;
+    
+	private int total;
 
     public Calculator() {
         this.reset();

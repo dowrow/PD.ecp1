@@ -1,6 +1,7 @@
 package es.upm.miw.pd.ecp1.command.memetablecalculator;
 
 public class MementoCalculator {
+	
 	private int total;
 	
 	public MementoCalculator (int total) {

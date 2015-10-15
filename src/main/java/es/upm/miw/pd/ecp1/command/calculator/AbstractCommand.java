@@ -1,7 +1,9 @@
 package es.upm.miw.pd.ecp1.command.calculator;
 
 public abstract class AbstractCommand implements Command {
+	
 	private Calculator calculator;
+	
 	private String name;
 	
 	public AbstractCommand(Calculator calculator) {
