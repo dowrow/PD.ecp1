@@ -1,6 +1,7 @@
 package es.upm.miw.pd.ecp1.text;
 
 public class Caracter extends Componente {
+	
 	private char valor;
 	
 	public Caracter(char valor) {
@@ -18,7 +19,6 @@ public class Caracter extends Componente {
 
 	@Override
 	public void add(Componente componente) {
-		// TODO Auto-generated method stub
 	}
 
 	public char getValor() {
@@ -29,4 +29,8 @@ public class Caracter extends Componente {
 		this.valor = valor;
 	}
 
+	@Override
+	public boolean isCaracter() {
+		return true;
+	}
 }

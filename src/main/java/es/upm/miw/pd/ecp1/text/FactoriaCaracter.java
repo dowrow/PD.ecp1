@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class FactoriaCaracter {
 	
 	private static FactoriaCaracter factoria = null;
+	
 	private HashMap<Character, Caracter> map;
 	
 	private FactoriaCaracter() {
@@ -27,7 +28,4 @@ public class FactoriaCaracter {
 			return nuevoCaracter;
 		}
 	}
-	
-	
-
 }

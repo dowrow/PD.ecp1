@@ -1,15 +1,12 @@
 package es.upm.miw.pd.ecp1.text;
 
+import java.util.ArrayList;
+
 public abstract class TextoCompuesto extends Componente {
 
-	@Override
-	public void add(Componente componente) {
-		
-	}
+	protected ArrayList<Componente> componentes;
 	
-	@Override
-	public String dibujar(boolean mayusculas) {
-		return null;
+	public TextoCompuesto() {
+		componentes = new ArrayList<>();
 	}
-
 }

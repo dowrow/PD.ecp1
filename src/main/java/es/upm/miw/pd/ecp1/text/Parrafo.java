@@ -4,8 +4,6 @@ import java.util.ArrayList;
 
 public class Parrafo extends TextoCompuesto {
 	
-	ArrayList<Componente> componentes;
-	
 	public Parrafo() {
 		this.componentes = new ArrayList<>();
 	}
@@ -18,12 +16,18 @@ public class Parrafo extends TextoCompuesto {
 		}		
 		return texto + "\n"; 
 	}
-	
-	public void add(Caracter c) {
-		this.componentes.add(c);
+
+	@Override
+	public void add(Componente componente) throws UnsupportedOperationException {
+		if (componente.isCaracter()) {
+			componentes.add(componente);
+		} else {
+			throw new UnsupportedOperationException();
+		}
 	}
-	
-	public void add(TextoCompuesto t) throws UnsupportedOperationException {
-		throw new UnsupportedOperationException();
-	}
+
+	@Override
+	public boolean isCaracter() {
+		return false;
+	}	
 }
