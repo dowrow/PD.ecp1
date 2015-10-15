@@ -1,4 +1,4 @@
-package factoryMethod.naturalNumber;
+package es.upm.miw.pd.ecp1.factoryMethod.naturalNumber;
 
 import static org.junit.Assert.assertEquals;
 
