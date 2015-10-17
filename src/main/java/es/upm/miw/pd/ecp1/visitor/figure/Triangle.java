@@ -1,19 +1,15 @@
 package es.upm.miw.pd.ecp1.visitor.figure;
 
 public class Triangle extends Figure {
-    private double base;
+   
+	private double base;
 
     private double height;
 
     public Triangle(String description, double base, double height) {
         super(description);
-        this.base = base;
-        this.height = height;
-    }
-
-    @Override
-    public double area() {
-        return base * height * 0.5;
+        this.setBase(base);
+        this.setHeight(height);
     }
 
     @Override
@@ -29,6 +25,22 @@ public class Triangle extends Figure {
 	@Override
 	public void accept(FigureVisitor visitor) {
 		visitor.visit(this);
+	}
+
+	public double getBase() {
+		return base;
+	}
+
+	public void setBase(double base) {
+		this.base = base;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
 	}
 
 }

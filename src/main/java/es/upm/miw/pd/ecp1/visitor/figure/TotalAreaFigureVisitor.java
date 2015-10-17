@@ -10,17 +10,17 @@ public class TotalAreaFigureVisitor extends FigureVisitor {
 
 	@Override
 	public void visit(Circle circle) {
-		totalArea += circle.area();
+		totalArea += Math.PI * circle.getRadius() * circle.getRadius();
 	}
 
 	@Override
 	public void visit(Square square) {
-		totalArea += square.area();
+		totalArea += square.getSide() * square.getSide();
 	}
 
 	@Override
 	public void visit(Triangle triangle) {
-		totalArea += triangle.area();
+		totalArea += triangle.getBase() * triangle.getHeight() * 0.5;
 	}
 	
 	public double getTotalArea() {

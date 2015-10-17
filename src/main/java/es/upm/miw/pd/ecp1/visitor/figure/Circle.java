@@ -6,12 +6,7 @@ public class Circle extends Figure {
 
     public Circle(String description, double radius) {
         super(description);
-        this.radius = radius;
-    }
-
-    @Override
-    public double area() {
-        return Math.PI * radius * radius;
+        this.setRadius(radius);
     }
 
     @Override
@@ -22,6 +17,14 @@ public class Circle extends Figure {
 	@Override
 	public void accept(FigureVisitor visitor) {
 		visitor.visit(this);
+	}
+
+	public double getRadius() {
+		return radius;
+	}
+
+	public void setRadius(double radius) {
+		this.radius = radius;
 	}
 
 }
