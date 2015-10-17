@@ -9,11 +9,6 @@ public class Circle extends Figure {
         this.setRadius(radius);
     }
 
-    @Override
-    public double numberOfSides() {
-        return Double.POSITIVE_INFINITY;
-    }
-
 	@Override
 	public void accept(FigureVisitor visitor) {
 		visitor.visit(this);

@@ -13,11 +13,6 @@ public class Triangle extends Figure {
     }
 
     @Override
-    public double numberOfSides() {
-        return 3;
-    }
-
-    @Override
     public String toString() {
         return super.toString();
     }

@@ -10,17 +10,17 @@ public class TotalNumberOfSidesFigureVisitor extends FigureVisitor {
 	
 	@Override
 	public void visit(Circle circle) {
-		sides += circle.numberOfSides();
+		sides += Double.POSITIVE_INFINITY;
 	}
 
 	@Override
 	public void visit(Square square) {
-		sides += square.numberOfSides();
+		sides += 4;
 	}
 
 	@Override
 	public void visit(Triangle triangle) {
-		sides += triangle.numberOfSides();
+		sides += 3;
 	}
 	
 	public double getTotalNumberOfSides() {
